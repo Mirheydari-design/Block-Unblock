@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "admin-block-api-collection",
+		"name": "Admin Block API",
+		"description": "Collection for blocking and unblocking users and posts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Block User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Admin-Token",
+						"value": "v7x4q817c8fo2e1872y8s63l5fpe9izv",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userId\": \"<PUT_USER_ID_HERE>\",\n  \"action\": \"block\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mahdaviat.metafa.ir/api/admin/block/user",
+					"protocol": "https",
+					"host": [
+						"mahdaviat",
+						"metafa",
+						"ir"
+					],
+					"path": [
+						"api",
+						"admin",
+						"block",
+						"user"
+					]
+				},
+				"description": "Block a user by their user ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Unblock User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Admin-Token",
+						"value": "v7x4q817c8fo2e1872y8s63l5fpe9izv",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"userId\": \"<PUT_USER_ID_HERE>\",\n  \"action\": \"unblock\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mahdaviat.metafa.ir/api/admin/block/user",
+					"protocol": "https",
+					"host": [
+						"mahdaviat",
+						"metafa",
+						"ir"
+					],
+					"path": [
+						"api",
+						"admin",
+						"block",
+						"user"
+					]
+				},
+				"description": "Unblock a user by their user ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Block Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Admin-Token",
+						"value": "v7x4q817c8fo2e1872y8s63l5fpe9izv",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"postId\": \"<PUT_POST_ID_HERE>\",\n  \"action\": \"block\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mahdaviat.metafa.ir/api/admin/block/post",
+					"protocol": "https",
+					"host": [
+						"mahdaviat",
+						"metafa",
+						"ir"
+					],
+					"path": [
+						"api",
+						"admin",
+						"block",
+						"post"
+					]
+				},
+				"description": "Block a post by its post ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Unblock Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Admin-Token",
+						"value": "v7x4q817c8fo2e1872y8s63l5fpe9izv",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"postId\": \"<PUT_POST_ID_HERE>\",\n  \"action\": \"unblock\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mahdaviat.metafa.ir/api/admin/block/post",
+					"protocol": "https",
+					"host": [
+						"mahdaviat",
+						"metafa",
+						"ir"
+					],
+					"path": [
+						"api",
+						"admin",
+						"block",
+						"post"
+					]
+				},
+				"description": "Unblock a post by its post ID"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://mahdaviat.metafa.ir/api/admin/block",
+			"type": "string"
+		}
+	]
+}
