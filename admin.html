@@ -637,8 +637,11 @@
 
     <script>
         const ADMIN_TOKEN = 'v7x4q817c8fo2e1872y8s63l5fpe9izv';
-        // اگر API روی دامنه دیگری است، این URL را تغییر دهید
-        const API_BASE_URL = 'https://mahdaviat.metafa.ir/api/admin/block';
+        
+        // 🔥 CLOUDFLARE WORKER PROXY
+        // بعد از deploy کردن Worker، آدرس زیر را با آدرس Worker خودت جایگزین کن
+        // مثال: https://block-unblock-proxy.your-project.workers.dev
+        const API_BASE_URL = 'https://block-unblock-proxy.YOUR-PROJECT.workers.dev';
         const LOG_STORAGE_KEY = 'admin_panel_logs';
         const MAX_LOGS = 100; // حداکثر تعداد لاگ‌های ذخیره شده
 
